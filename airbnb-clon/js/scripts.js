@@ -14,16 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // console.log(tiempo);
         if(tiempo > 40) {
             tiempo = 0;
-            imagenHero.style.backgroundImage = "url(../img/"+imagenes[i]+")";
-            
-            if(i === imagenes.length - 1) {
-                i = 0;
-            } else {
-                i++;
-            }
-        }
-        
-        tiempo += 1;
+        } else {
+            tiempo++;
+        }        
     }, 100);
 });
 
